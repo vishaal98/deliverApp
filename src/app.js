@@ -1,5 +1,5 @@
 const express = require("express");
-const db = require("./configs/pgConfig");
+// const db = require("./configs/pgConfig");
 const ApiError = require("./utils/apiError");
 const httpStatus = require("http-status");
 const swaggerUi = require("swagger-ui-express");
