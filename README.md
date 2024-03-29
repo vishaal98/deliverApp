@@ -22,6 +22,36 @@ You can explore the API endpoints using the Swagger documentation available at [
 
 ## Setup to local
 
+Setup the Database
+1. **Download and install postgreSQL**
+2. **connect and access postgresSQL through command line or some GUI applications like TablePlus**
+3. **Create the Database and Tables with below commands**
+
+```bash
+CREATE DATABASE anyName;
+
+CREATE TABLE organization (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE item (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(20) NOT NULL,
+    description VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE pricing (
+    organization_id INTEGER REFERENCES organizations(id),
+    item_id INTEGER REFERENCES items(id),
+    zone VARCHAR(50) NOT NULL,
+    base_distance_in_km INTEGER NOT NULL,
+    km_price INTEGER NOT NULL,
+    fix_price INTEGER NOT NULL,
+    PRIMARY KEY (organization_id, item_id, zone)
+);
+```
+
 To set up the Food Delivery App locally, follow these steps:
 
 1. **Clone the Repository**: 
