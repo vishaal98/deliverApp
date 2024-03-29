@@ -17,7 +17,7 @@ The Food Delivery App allows users to create/delete orgnizations and items. Allo
 ## Explore API endpoints
 For the live application the DB is being deployed in Vercel and the API service is deployed in Render.
 
-You can explore the API endpoints using the Swagger documentation available at [Swagger Page](http://your-domain.com/swagger).
+You can explore the API endpoints using the Swagger documentation available at [Swagger Page](https://deliverapp.onrender.com/api-docs/).
 
 ## Setup to local
 
