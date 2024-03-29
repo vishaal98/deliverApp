@@ -9,6 +9,7 @@ The Food Delivery App is a REST API that facilitates APIs for food delivery serv
 - [Setup to local](#setup-to-local)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
+- [Future Scope](#future-scope)
 
 ## Overview
 
@@ -80,3 +81,10 @@ curl -X POST \
     "total_distance": 12,
     "item_type": "perishable"
   }'
+```
+
+## Future Scope
+1. **Add Authentication**
+2. **Restrict access to certain APIs with authorisation**
+3. **More API endpoints to interact with the Application**
+4. **Frontend APP to interact with app in GUI friendly way**
