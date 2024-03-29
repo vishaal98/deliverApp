@@ -15,6 +15,8 @@ The Food Delivery App is a REST API that facilitates APIs for food delivery serv
 The Food Delivery App allows users to create/delete orgnizations and items. Allows users to calculate the delivery cost for different types of food items across various zones. It dynamically determines pricing based on the base distance and price, as well as per kilometer prices for perishable and non-perishable items. The application is built using Node.js for the backend, with Express.js as the web framework and PostgreSQL for the database.
 
 ## Explore API endpoints
+For the live application the DB is being deployed in Vercel and the API service is deployed in Render.
+
 You can explore the API endpoints using the Swagger documentation available at [Swagger Page](http://your-domain.com/swagger).
 
 ## Setup to local
